@@ -1,0 +1,11 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/todo
+    username: postgres
+    password: dudedead
+    driverClassName: org.postgresql.Driver
+  liquibase:
+    url: jdbc:postgresql://localhost:5432/todo
+    user: postgres
+    password: dudedead
+    change-log: db/changelog/changelog.sql

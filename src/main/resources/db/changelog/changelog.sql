@@ -1,0 +1,1 @@
+create table tasks(id serial not null primary key,title varchar(250),status varchar(250),task varchar(250),created_at varchar(250));
