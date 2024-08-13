@@ -22,7 +22,7 @@ public class TaskHandler {
                 .flatMap(savedTask -> ServerResponse.ok()
                         .contentType(MediaType.APPLICATION_JSON)
                         .bodyValue(savedTask)
-                        .onErrorResume(s -> ServerResponse.badRequest().bodyValue("Error saving course:" + s.getMessage())));
+                        .onErrorResume(s -> ServerResponse.badRequest().bodyValue("Error saving task:" + s.getMessage())));
     }
 
     public Mono<ServerResponse> getAllTasks(ServerRequest request){

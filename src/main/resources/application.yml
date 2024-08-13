@@ -4,6 +4,7 @@ spring:
     username: postgres
     password: dudedead
     driverClassName: org.postgresql.Driver
+
   liquibase:
     url: jdbc:postgresql://localhost:5432/todo
     user: postgres
